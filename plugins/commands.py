@@ -47,8 +47,8 @@ async def start(client, message):
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('Main Channel⚡', url='https://t.me/Movie_Express_Official')
             ],[
-            InlineKeyboardButton('Series Group✨', url='https://t.me/Series_Flix_Official'),
-            InlineKeyboardButton('Movies Group✨', url='https://t.me/+iXbFPA3J0iUxNmZl')
+            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('😊 About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
